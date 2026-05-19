@@ -140,5 +140,8 @@ export function useTopNavLinks(): TopNavLink[] {
     links.push({ title: t('About'), href: '/about' })
   }
 
+  // 4422api custom: Image Generation playground (full-page reload, not React Router)
+  links.push({ title: t('Image Generation'), href: '/image', external: true })
+
   return links
 }
